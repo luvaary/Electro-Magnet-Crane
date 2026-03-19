@@ -1,43 +1,68 @@
-# Desktop Electromagnet Crane — Science Talent Search Build Guide
+# Cardboard Electromagnet Crane — Science Talent Search Build Guide
+
+---
+
+## Material philosophy
+
+Every structural part of this crane is built from corrugated cardboard.
+The only non-cardboard components are parts that physically cannot be made
+from cardboard:
+
+| Non-cardboard item | Why it cannot be cardboard |
+|---|---|
+| Lazy Susan bearing | Requires precision steel ball race to rotate under load |
+| M10 hex bolt (iron core) | Must be ferromagnetic; cardboard cannot be magnetised |
+| Enamelled copper wire (magnet wire) | Electrical conductor — cardboard is an insulator |
+| Steel wire or strong nylon string (cable) | Must carry load without stretching or snapping |
+| 9 V battery | Electrical energy source |
+| Momentary push-button switch | Electrical component |
+
+Everything else — base plate, upright column, boom, gussets, pulley,
+column foot block, battery housing — is made entirely from cardboard.
 
 ---
 
 ## Overview
 
-This model crane demonstrates two core principles of electromagnetism and mechanical
-engineering: (1) that a current-carrying coil wrapped around an iron core creates a
-temporary magnet strong enough to lift small ferrous objects, and (2) that a rotating
-bearing can distribute a load through a full 360° arc. When the circuit is closed by
-pressing the momentary switch, current from a 9 V battery flows through the coil
-windings, magnetising the iron core. Releasing the switch breaks the current, collapsing
-the field and dropping the load — exactly like a full-scale scrapyard crane.
+When the switch is pressed, current from the 9 V battery flows through the
+wound coil, magnetising the M10 bolt core. The flat bolt-head face becomes
+an electromagnet that attracts and lifts small ferrous objects. Releasing
+the switch collapses the magnetic field and drops the load.
 
-The Lazy Susan bearing replaces a fixed joint at the base of the upright column. Because
-the upper assembly (column + boom + electromagnet) sits on the rotating inner ring of
-the bearing, the entire crane can be turned by hand to any angle without disturbing the
-base or wiring.
+The entire upper assembly (column + boom + electromagnet) sits on the inner
+ring of a Lazy Susan bearing bolted to the base. This lets the crane rotate
+360° by hand, allowing the operator to pick from one position and deposit
+at another — exactly like a full-scale slewing crane.
 
 ---
 
 ## Materials and Components
 
+### Cardboard (structural)
+
 | Item | Specification | Qty |
 |---|---|---|
-| MDF or plywood base plate | 280 mm × 280 mm × 12 mm | 1 |
-| Lazy Susan bearing (square) | 100 mm × 100 mm, steel, rated ≥ 5 kg | 1 |
-| Aluminium square tube (upright) | 20 mm × 20 mm × 1.5 mm wall, cut to 370 mm | 1 |
-| Aluminium flat bar (boom) | 20 mm × 3 mm, cut to 200 mm | 1 |
-| Plastic/nylon pulley | 20 mm wheel diameter, M4 axle | 1 |
-| Steel wire or monofilament cable | 0.5 mm diameter, 600 mm length | 1 |
-| Iron bolt (core) | M10 × 50 mm hex-head | 1 |
+| Corrugated cardboard sheets | Double-wall (7 mm thick) recommended | ~6 A2 sheets |
+| PVA glue or white craft glue | For laminating layers | 1 bottle |
+| Hot glue gun + sticks | For gussets and final assembly | 1 |
+| Craft knife + cutting mat | For clean cuts | 1 |
+| Steel ruler | For straight cuts | 1 |
+| Bulldog clips or heavy books | For clamping while glue dries | 6–10 |
+| Bamboo skewer or wooden dowel 6 mm dia. | Pulley axle | 1 |
+
+### Non-cardboard (functional necessities only)
+
+| Item | Specification | Qty |
+|---|---|---|
+| Lazy Susan bearing (square) | 100 mm × 100 mm steel, rated >= 5 kg | 1 |
+| Iron bolt (electromagnet core) | M10 × 50 mm hex-head | 1 |
 | Enamelled copper wire (magnet wire) | 0.3 mm diameter, ~15 m | 1 reel |
+| Steel wire or strong nylon string | 0.5–1 mm diameter, 600 mm length | 1 |
 | 9 V battery + snap connector | Standard PP3 / 6LR61 | 1 |
-| Momentary push-button switch | SPST normally-open, rated ≥ 500 mA | 1 |
-| M4 machine screws + nuts | Stainless, 10 mm | 8 |
-| M10 nut + washers | For clamping coil | 2 |
-| Heatshrink or electrical tape | General insulation | 1 m |
-| Small L-brackets | Aluminium, 25 mm | 4 |
-| Epoxy adhesive | Two-part structural | 1 pair |
+| Momentary push-button switch | SPST normally-open, rated >= 500 mA | 1 |
+| M4 bolts + nuts | 12 mm, for fixing bearing rings | 8 |
+| Insulated hookup wire | 22 AWG, two colours, ~1 m each | 2 lengths |
+| Heatshrink or electrical tape | For insulating joins | 1 m |
 
 ---
 
@@ -45,150 +70,183 @@ base or wiring.
 
 | Component | Dimension |
 |---|---|
-| Base plate | 280 mm × 280 mm × 12 mm |
-| Upright column height | 370 mm above base top |
-| Boom length (from column centre) | 195 mm |
-| Boom cross-section | 20 mm × 3 mm flat bar |
+| Base plate (laminated card stack) | 280 mm × 280 mm × 24 mm (6 sheets) |
+| Column foot block | 68 mm × 68 mm × 30 mm (laminated stack) |
+| Upright column (box section) | 50 mm × 50 mm outer, 360 mm tall |
+| Column wall thickness | 2 layers of 7 mm double-wall card per side |
+| Boom length (column centre to tip) | 200 mm |
+| Boom cross-section (I-beam) | 50 mm wide × 30 mm deep |
+| Gusset triangles | 80 mm × 80 mm right-angle triangle, two pieces |
+| Pulley disc diameter | 40 mm, cut from 4 laminated card layers |
 | Electromagnet coil outer diameter | ~36 mm |
-| Coil length | ~45 mm |
-| Iron core (M10 bolt) | 50 mm length |
-| Cable free length (fully lowered) | ~140 mm |
 | Lazy Susan bearing footprint | 100 mm × 100 mm |
 
 ---
 
 ## Assembly Steps
 
-**Step 1 — Prepare the base.**
-Cut MDF or plywood to 280 × 280 mm. Sand all edges smooth. Mark the centre point. Drill
-four pilot holes matching the outer ring bolt pattern of the Lazy Susan bearing (consult
-your bearing's datasheet — typically a 75 mm square bolt circle for a 100 mm bearing).
+### Step 1 — Laminate the base plate
 
-**Step 2 — Mount the Lazy Susan bearing.**
-Bolt the outer (fixed) ring of the bearing to the top face of the base plate using M4
-bolts through the pre-drilled holes. Apply a small drop of thread-lock. The inner
-(rotating) ring faces upward and will carry the crane structure.
+Cut twelve pieces of double-wall cardboard to 280 × 280 mm. Glue them
+into two stacks of six using PVA, alternating the flute direction on each
+sheet (one grain horizontal, next vertical) for maximum stiffness. Clamp
+under heavy books overnight. When dry, glue the two stacks together.
+Mark the centre point of the finished base.
 
-**Step 3 — Fabricate the column foot block.**
-Cut a 68 × 50 × 20 mm block from scrap timber or MDF. This block bridges the inner ring
-of the bearing to the base of the aluminium upright. Bolt it through the inner ring bolt
-circle. Apply epoxy under the block for additional shear resistance once alignment is
-confirmed.
+> **Note:** Six to twelve layers of 7 mm double-wall card gives adequate
+> stiffness for this build. If only single-wall card is available, use
+> 14–16 layers. Adjust based on the card you have.
 
-**Step 4 — Mount the upright column.**
-Cut the 20 × 20 mm aluminium square tube to 370 mm. Attach two small L-brackets at the
-bottom face of the column. Bolt these through the column foot block so the upright stands
-perfectly vertical (use a small spirit level). Apply epoxy at the joint line for rigidity.
+### Step 2 — Mount the Lazy Susan bearing to the base
 
-**Step 5 — Fabricate and attach the boom.**
-Cut the 20 × 3 mm aluminium flat bar to 195 mm. Drill an M4 hole at the tip (20 mm from
-the far end) for the pulley axle. Drill two matching holes at the inner end for attachment
-to the top of the upright. Bolt the boom horizontally to the column top. The boom should
-project outward from the column centre to a tip approximately 195 mm away.
+Mark the outer ring bolt holes on the base top face (typically a 75 mm
+square bolt circle for a 100 mm bearing — check the bearing's datasheet).
+Use a bradawl to punch clean holes. Thread M4 bolts through from the bottom
+and tighten nuts onto the outer ring. The inner ring now rotates freely
+above the base.
 
-**Step 6 — Mount the pulley.**
-Thread the M4 axle bolt through the hole at the boom tip and fit the 20 mm plastic pulley
-with washers on each side. Tighten the nut firmly — the pulley must spin freely but have
-no lateral play.
+### Step 3 — Build the column foot block
 
-**Step 7 — Wind the electromagnet coil.**
-Thread the M10 bolt through a pre-drilled hole in a small plywood cheek plate (one on
-each end of the coil form, 38 mm diameter). Leave 150 mm of wire free as a lead. Wind
-~400 turns of 0.3 mm enamelled wire in tight layers, keeping each layer even. Leave
-another 150 mm free at the end. Secure the winding with two wraps of heatshrink. The
-completed coil should measure roughly 36 mm in diameter and 45 mm long. Resistance should
-be approximately 8–15 Ω.
+Cut and laminate a 68 × 68 mm stack of card to ~30 mm height (about 4–5
+layers of double-wall, PVA-glued, clamped overnight). This block sits on
+the bearing inner ring and carries the entire upright column. Punch M4
+holes matching the inner ring bolt circle and bolt through. Add hot glue
+around the inner ring perimeter for extra shear resistance.
 
-**Step 8 — Attach the electromagnet.**
-Thread the steel cable through the pulley and tie a small wire loop at the bottom end.
-Hook this loop over the head of the M10 bolt (the top of the electromagnet). The magnet
-should hang vertically, with the flat core face pointing downward.
+### Step 4 — Fabricate the upright column (box section)
 
-**Step 9 — Route the wiring.**
-Run the two coil leads up the cable (secure with small zip-ties every 50 mm), over the
-pulley, back along the top edge of the boom (use adhesive cable clips), and down the front
-face of the upright column. At the base, connect the positive lead through the momentary
-switch, then to the positive terminal of the 9 V battery snap connector. Connect the
-negative lead directly to the negative terminal. Mount the switch to the column face at a
-comfortable operating height (around 490 mm from base top — approximately 120 mm above
-the base plate).
+Cut four strips of double-wall card, each 360 mm long. Two should be
+50 mm wide (the front and back faces); two should be 36 mm wide (the side
+faces, to account for face thickness at the corners). Glue and clamp into
+a square tube using PVA. Reinforce all four internal corners with
+L-section card strips PVA'd inside. Let cure fully before loading.
 
-**Step 10 — Final check and test.**
-Confirm all joints are firm. Rotate the upper assembly on the bearing through a full 360°
-— there should be no binding. Press the switch and hold a small steel washer (or paper
-clip) beneath the magnet face. It should attract and hold. Release the switch — the object
-drops. If lift is weak, check wire insulation on the coil leads for nicks (shorts reduce
-current) and confirm battery voltage.
+A simpler alternative: roll 4–6 layers of card into a tight cylinder
+~50 mm in diameter, glue each layer as you roll, and clamp until set.
+
+### Step 5 — Attach column to foot block
+
+Apply hot glue to the top face of the foot block. Press the column base
+squarely onto it and check vertical alignment with a set square on two
+adjacent faces. Hold until set. Reinforce with four small cardboard
+L-brackets glued at the inside of the junction (two per face).
+
+### Step 6 — Cut and glue the gusset braces
+
+Cut two right-angle triangles with 80 mm legs from double-wall card. Glue
+one on each side of the column base, flush against the column face and the
+foot block surface. These resist tipping forces when the boom is loaded.
+Press firmly for 30 seconds per gusset.
+
+### Step 7 — Fabricate the boom (I-beam)
+
+Cut the following from double-wall card:
+
+- Two flange strips: 200 mm × 50 mm (top flange and bottom flange)
+- One web piece: 200 mm × 20 mm (vertical connector between flanges)
+
+Glue the web vertically between the two flanges, centred, forming an
+I-profile. Clamp and let fully cure. Optionally add internal ribs every
+40 mm for extra stiffness.
+
+Pierce a clean 6 mm hole at the boom tip (15 mm from the far end) for the
+pulley axle. Pierce two mounting holes at the inner end for attachment to
+the column top. Secure with hot glue and two small cardboard gusset
+brackets at the boom-to-column joint.
+
+### Step 8 — Make the cardboard pulley
+
+Laminate four card circles, each 40 mm in diameter. Glue into a stack and
+clamp until dry. Cut a shallow groove around the circumference with a craft
+knife so the cable sits in the groove rather than slipping off. Pierce the
+centre with the 6 mm bamboo skewer. Push the skewer through the boom tip
+hole. The pulley must spin freely; the axle must not spin. Secure both axle
+ends with small card tabs and hot glue.
+
+### Step 9 — Wind the electromagnet coil
+
+Cut two card discs 38 mm in diameter with a 10 mm centre hole — these are
+the coil end cheeks. Slide both onto the M10 bolt, spaced 45 mm apart.
+Wrap a thin layer of card around the bolt shank between the cheeks as a
+winding former.
+
+Leave 150 mm of wire free as a lead. Wind approximately 400 turns of
+0.3 mm enamelled copper wire in tight, even layers between the cheeks.
+Leave another 150 mm free at the end. Secure the winding with two wraps
+of electrical tape. Finished coil resistance should be 8–15 Ω.
+
+### Step 10 — Hang the electromagnet
+
+Thread the steel cable or strong string over the pulley groove and tie a
+loop at the lower end. Attach this loop to the bolt head via a card tab
+or washer glued to the bolt. The magnet should hang vertically with the
+flat bolt-head face pointing downward.
+
+### Step 11 — Route the wiring
+
+Solder insulated hookup wire to the coil leads. Run both wires up the
+cable (secure with small cable-tie wraps every 50 mm), along the boom top
+face (tape flat), and down the column front face (tape flat). At the base,
+connect the positive wire through the momentary switch to the battery
+positive terminal. Connect the negative wire directly to the battery
+negative terminal. Wrap the battery in a card sleeve and hot-glue it to
+the foot block or base. Mount the switch on the column face at comfortable
+hand height (~100–120 mm above base top); punch a clearance hole through
+the column wall and secure with hot glue.
+
+### Step 12 — Final check and test
+
+Rotate the upper assembly through 360° — no binding. Press the switch and
+hold a steel paper clip beneath the magnet face. It should attract and
+hold. Release — object drops.
+
+If lift is weak: check coil leads for nicks in the enamel insulation
+(shorts reduce current), confirm battery voltage with a multimeter, and
+verify the bolt face contacts the object cleanly.
 
 ---
 
-## How the Lazy Susan Bearing Is Installed — and Why It Matters
+## How the Lazy Susan Bearing Works in This Build
 
-The Lazy Susan bearing consists of two flat steel rings separated by a circular ball race.
-The outer ring is fixed (bolted to the base plate). The inner ring rotates freely on the
-balls and carries all the weight above it.
+The outer ring is bolted to the base plate and never moves. The inner ring
+is bolted to the column foot block and carries the full weight above it.
+The wiring runs down the outside of the column with enough slack to allow
+a full arc, so the crane swings freely through 360° with no mechanical
+stop. This lets the operator pick up an object, rotate the crane, and set
+it down elsewhere — the same slewing action as a full-scale crane.
 
-In this crane, the inner ring is bolted to the column foot block, which in turn supports
-the entire upright, boom, and electromagnet assembly. Because the wiring runs down the
-outside of the column and is long enough to allow a full sweep, the crane can rotate
-through 360° without any mechanical stop. This allows the operator to pick up an object
-from one position and swing the crane to deposit it at another — mimicking the real-world
-function of a slewing crane.
-
-Without the bearing, the crane would require a fixed pivot and could only demonstrate
-lifting in a single direction — losing the rotation functionality entirely.
-
-> **Assumed specification:** A 100 mm square steel Lazy Susan bearing rated for 5 kg is
-> more than sufficient for the ~250 g upper assembly. This assumption is explicitly noted
-> as an educational choice; heavier bearings may be substituted.
-
----
-
-## How the Electromagnet Is Mounted and Powered
-
-The electromagnet hangs from the steel lifting cable via the head of the M10 bolt that
-forms its iron core. The coil windings surround this core. When DC current passes through
-the windings, the core becomes magnetised and the flat bottom face of the bolt head acts
-as the pickup face.
-
-**Power source:** 9 V battery (PP3). This is a deliberate choice for classroom safety —
-below the threshold that presents any shock hazard, while supplying enough current through
-an 8–15 Ω coil to generate a usable magnetic field. At 9 V across 10 Ω, approximately
-0.9 A flows, which is adequate to lift small iron objects (washers, bolts, small nuts) up
-to roughly 50–80 g depending on coil quality and core contact.
-
-The switch is wired in series on the positive line. Using a momentary (normally-open)
-switch means the magnet is only energised while the button is held — intentional and safe.
+This bearing is the one purchased component. Its steel ball race is
+essential; cardboard cannot replicate rolling-element rotation under load
+without quickly deforming.
 
 ---
 
 ## Wiring Overview
 
 ```
-(+) Battery → Switch → Coil lead A
-(−) Battery → Coil lead B
+(+) Battery → Switch → Coil lead A (orange wire)
+(−) Battery → Coil lead B (blue wire)
 ```
 
-Both leads travel from the base up the column face, along the boom top edge, and down the
-cable to the coil terminals. Keep lead pairs twisted together along straight runs to
-minimise any electromagnetic interference with the coil field itself. Insulate all
-stripped ends with heatshrink. Polarity for the electromagnet is not critical (the core
-magnetises regardless of current direction), but maintaining consistent polarity is good
-practice.
+Both leads run from the battery at the base, up the column face, along
+the boom top, and down the cable to the coil. Twist the lead pair together
+along straight runs to reduce stray field interference. Insulate all bare
+joins with heatshrink or tape. Polarity does not affect which direction the
+core magnetises, but consistent colour coding is good lab practice.
 
 ---
 
 ## Safety Notes
 
-- The 9 V supply presents no shock risk under normal handling.
-- Do not run the electromagnet continuously for more than 2–3 minutes at a stretch — the
-  coil will warm up. This is normal; allow it to cool before the next demonstration.
-- Ensure all bolted joints are firmly tightened before lifting any object; the bearing
-  inner ring must be secure before the crane is operated.
-- Keep the lift cable taut — a slack cable can slip the pulley groove.
-- Do not attempt to lift objects heavier than 80 g; the 9 V supply and small core are not
-  rated for heavier loads and may overheat.
-- Sand and paint any exposed raw MDF edges to prevent moisture absorption over time.
+- 9 V presents no shock risk under normal handling.
+- Do not run the electromagnet continuously for more than 2–3 minutes —
+  the coil warms up. Allow it to cool between demonstrations.
+- Ensure all PVA joints are fully cured before applying any load.
+  Do not rush the drying steps.
+- Do not attempt to lift objects heavier than 60–80 g.
+- Keep the crane away from water — cardboard loses stiffness when wet.
+- When cutting cardboard, always cut away from fingers and use a steel
+  ruler as a guide.
 
 ---
 
@@ -196,24 +254,29 @@ practice.
 
 | Dimension | Value | Within 0.4 m? |
 |---|---|---|
-| Total height (base bottom to boom top) | ≈ 0.382 m | ✓ Yes |
-| Base footprint width | 0.280 m | ✓ Yes |
-| Base footprint depth | 0.280 m | ✓ Yes |
-| Maximum horizontal reach (column centre to magnet) | ≈ 0.215 m | ✓ Yes |
+| Total height (base bottom to boom top) | ~0.380 m | Yes |
+| Base footprint width | 0.280 m | Yes |
+| Base footprint depth | 0.280 m | Yes |
+| Max horizontal reach (column centre to magnet) | ~0.215 m | Yes |
 
-All four critical dimensions are comfortably within the 0.4 m constraint. The most
-relevant single dimension — total standing height — is approximately 0.38 m. The base
-footprint fits within a 28 cm square, suitable for any standard desk or display table.
+All critical dimensions are within the 0.4 m constraint. The tallest
+dimension — standing height — is approximately 0.38 m. The base footprint
+fits within a 28 cm square, suitable for any desk or display table.
 
 ---
 
 ## Using the Diagram in a Science Talent Search Display
 
-The SVG diagram is designed to be printed at A3 size (420 × 297 mm) or displayed on a
-screen without loss of resolution, as it is a vector file. For a display board, mount a
-printed copy at eye level beside the physical model. Use the labeled callouts to guide
-judges through each component as you explain: start at the base and Lazy Susan bearing,
-trace the upright to the boom, follow the wiring path to the electromagnet, and
-demonstrate the 360° rotation in real time. The diagram also serves as your schematic
-reference in the written report; cite it in the methods section as
-"Figure 1 — Annotated crane schematic."
+The SVG diagram prints without quality loss at A3 (420 × 297 mm) or
+larger. Mount a printed copy at eye level beside the physical model on
+your display board. The callout labels guide a judge through each
+component in order: base plate and Lazy Susan bearing, column and gusset
+braces, boom, pulley, cable, electromagnet, and wiring path back to the
+switch and battery.
+
+In the written report, cite the diagram as "Figure 1 — Annotated crane
+schematic" and reference it in the materials and methods section. The
+colour coding distinguishes cardboard structural components (amber/tan),
+the electromagnet coil (blue), wiring paths (orange and blue dashed
+lines), and the purchased steel bearing (gray) — making the material
+choices immediately clear to any reader.
